@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Noah Gallaire - Portfolio</title>
+  </head>
+  <body>
+    <div class="curseur" id="curseur"></div>
+    <div class="anneau-curseur" id="anneau-curseur"></div>
+
+    <div class="fond"></div>
+    <div class="vignette"></div>
+
+    <div class="texte">
+      <h1>NOAH GALLAIRE</h1>
+
+      <div class="separateur">
+        <div class="separateur-point"></div>
+      </div>
+
+      <h2>PORTFOLIO</h2>
+
+      <p class="description">
+        Découvrez mes projets
+      </p>
+
+      <a href="page.html" class="bouton-entrer"><span>ENTRER</span></a>
+    </div>
+
+    <div id="lecteur-musique">
+      <button id="bouton-lecture" class="bouton-lecteur" aria-label="Lecture / pause">
+        <span id="icone-lecture">▶</span>
+      </button>
+      <div class="info-piste">
+        <span id="nom-piste">SLOW DANCING IN THE DARK</span>
+        <div class="barre-progres">
+          <div class="remplissage-progres" id="remplissage-progres"></div>
+        </div>
+      </div>
+      <div class="controle-volume">
+        <button id="bouton-volume" class="bouton-lecteur" aria-label="Couper / activer le son">
+          <span id="icone-volume">🔊</span>
+        </button>
+        <input type="range" id="curseur-volume" min="0" max="1" step="0.01" value="0.5" aria-label="Volume">
+      </div>
+      <audio id="audio" src="audio.mp3" loop></audio>
+    </div>
+
+    <footer>
+      <span>NOAH GALLAIRE</span>
+      <span>2026</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
